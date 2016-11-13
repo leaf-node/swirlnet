@@ -3,9 +3,17 @@
 This library evolves neural networks that may perform well at various tasks,
 including control tasks.
 
-For a full example, see the `./test/xor.js` program.
+For a full example, see the `./test/xor.js` or the `./test/xor-new.js` and
+`./test/xor-worker.js`  programs.
 
-Install the library locally into your project's `node_modules`
+**NOTE:** Instead of directly interfacing with swirlnet, you may wish to use
+the **`swirlnet-solver-async`** package. It helps you take advantange of parallel
+neural network testing.
+
+        $ npm install swirlnet-solver-async
+
+If you want to use the base library, install it locally into your project's
+`node_modules` directory:
 
         $ npm install swirlnet
 
