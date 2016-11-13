@@ -105,6 +105,8 @@ solveXOR = function (fitnessTarget, maxGenerations) {
                 console.log();
                 console.log(JSON.parse(phenotype));
                 console.log();
+                console.log(phenotype);
+                console.log();
 
                 return;
             }
