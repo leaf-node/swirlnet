@@ -1,0 +1,37 @@
+{
+  "name": "swirlnet",
+  "version": "0.0.0",
+  "description": "Neuroevolution library based on NEAT (NeuroEvolution of Augmenting Topologies)",
+  "main": "src/index.js",
+  "files": [
+      "src",
+      "test",
+      "README.md",
+      "API.md",
+      "VS-NEAT.md",
+      "LICENSE"
+    ],
+  "scripts": {
+    "test": "test/xor.js"
+  },
+  "dependencies": {
+      "swirlnet.makepopulation": "1.0.x",
+      "swirlnet.genotopheno": "1.0.x",
+      "swirlnet.makenet": "1.0.x",
+      "swirlnet.makearchive": "1.0.x"
+  },
+  "keywords": [
+    "NEAT",
+    "Neuroevolution",
+    "neural network",
+    "net",
+    "AI",
+    "ML",
+    "artificial intelligence",
+    "machine learning",
+    "training",
+    "evolution"
+  ],
+  "author": "Andrew Engelbrecht",
+  "license": "Apache-2.0"
+}
