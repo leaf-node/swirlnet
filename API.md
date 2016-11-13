@@ -121,16 +121,19 @@ To create the archive for logging behaviors and measuring their sparsity:
 
 kNearestNeighbors` specifies how many of one's nearest neighbors in behavior
 space to use in determining a behavior's sparsity. archiveThreshold`specifies
-how sparse a behavior must be for it to be archived. maxArchiveSize sets the
-upper limit on the allowable size of the archive. When the archive grows beyond
-this size, the earlist members are pruned. The default size is Inifity. If your
-search typically produces tens of thousands of behaviors before finding a
-solution, you may want to reduce the maximum allowable archive size and/or
-increase the archive threshold. Finding sparsities becomes slow when there are
-many behaviors in an archive. behaviorDistanceFunction`is an optional custom
-function used to determine the distance between two behaviors. The default
-function measures the spacial distance between two behaviors as if they were
-points in multidimensional space.
+how sparse a behavior must be for it to be archived.
+
+maxArchiveSize sets the upper limit on the allowable size of the archive. When
+the archive grows beyond this size, the earlist members are pruned. The default
+size is Inifity. If your search typically produces tens of thousands of
+behaviors before finding a solution, you may want to reduce the maximum
+allowable archive size and/or increase the archive threshold. Finding
+sparsities becomes slow when there are many behaviors in an archive.
+
+`behaviorDistanceFunction` is an optional custom function used to determine the
+distance between two behaviors. The default function measures the spacial
+distance between two behaviors as if they were points in multidimensional
+space.
 
 Add each behavior and genome pair of the current generation. The behaviour must
 be an array of numbers, equal in length to every other genome's behavior.
