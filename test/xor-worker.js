@@ -20,8 +20,9 @@
 /*global Promise */
 
 var addListener, getXORFitness, runNet,
-    makeNet;
+    genoToPheno, makeNet;
 
+genoToPheno = require('swirlnet.geno-to-pheno');
 makeNet = require('swirlnet.make-net');
 
 addListener = function () {
@@ -30,7 +31,11 @@ addListener = function () {
 
     process.on("message", function (message) {
 
-        getXORFitness(makeNet(message.phenotype), message.options).then(function (result) {
+        var phenotype;
+
+        phenotype = genoToPheno(message.genome);
+
+        getXORFitness(makeNet(phenotype), message.options).then(function (result) {
             process.send(result);
         }).catch(function (error) {
 
