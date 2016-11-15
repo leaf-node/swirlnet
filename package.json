@@ -15,10 +15,10 @@
     "test": "test/xor.js"
   },
   "dependencies": {
-      "swirlnet.makepopulation": "1.0.x",
-      "swirlnet.genotopheno": "1.0.x",
-      "swirlnet.makenet": "1.0.x",
-      "swirlnet.makearchive": "1.0.x"
+      "swirlnet.makepopulation": "0.0.0",
+      "swirlnet.genotopheno": "0.0.0",
+      "swirlnet.makenet": "0.0.0",
+      "swirlnet.makearchive": "0.0.0"
   },
   "keywords": [
     "NEAT",
