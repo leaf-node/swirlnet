@@ -19,37 +19,7 @@
 
 /*global Promise */
 
-var addListener, getXORFitness, runNet,
-    genoToPheno, makeNet;
-
-genoToPheno = require('swirlnet.geno-to-pheno');
-makeNet = require('swirlnet.make-net');
-
-addListener = function () {
-
-    "use strict";
-
-    process.on("message", function (message) {
-
-        var phenotype;
-
-        phenotype = genoToPheno(message.genome);
-
-        getXORFitness(makeNet(phenotype), message.options).then(function (result) {
-            process.send(result);
-        }).catch(function (error) {
-
-            if (console.stack !== undefined) {
-                console.log(error.stack);
-            } else {
-                console.log(error);
-            }
-
-            process.exit(1);
-        });
-    });
-
-};
+var getXORFitness, runNet;
 
 // test each test case for multiple iterations and return the overall fitness
 getXORFitness = function (net, options) {
@@ -115,5 +85,5 @@ runNet = function (net, minIterations, maxIterations, input0, input1) {
     return results;
 };
 
-addListener();
+module.exports = getXORFitness;
 

@@ -71,7 +71,7 @@ solveXOR = function () {
     netSolveOptions.useWorkers = true;
     netSolveOptions.workerCount = os.cpus().length;
     /*jslint nomen: true*/
-    netSolveOptions.workerPath = path.join(__dirname, "xor-worker.js");
+    netSolveOptions.testFile = path.join(__dirname, "xor-worker.js");
     /*jslint nomen: false*/
 
     netSolveOptions.testFunctionOptions = {};
