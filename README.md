@@ -14,13 +14,13 @@ differences, refer to the `VS-NEAT.md` file in this repository.
 
 See the `API.md` file in this repo for API documentation.
 
-See the `test/xor.js` or `test/xor-new.js` and `test/xor-worker.js` files for a
-demonstration of swirlnet's capability.
+See the `test/xor-demo.js` or `test/xor-async.js` and
+`test/xor-async-worker.js` files for a demonstration of swirlnet's capability.
 
-    $ node ./test/xor.js
+    $ node ./test/xor-demo.js
 
     $ npm install swirlnet-solver-async
-    $ node ./test/xor-new.js
+    $ node ./test/xor-async.js
 
 ## Status
 
