@@ -48,7 +48,8 @@ connection.
 Once all connections are deleted, genomes always create the same output that
 is situated half way between the correct and inccorect answer for every test case.
 In early stages of evolution, this disconnected genome may outperform connected
-genomes.  Using the above approach solves this particular issue.
+genomes.
+Using the above approach solves this particular issue.
 
 * By changing four settings in swirlnet you may differentiate the probabilities
   of inheriting disablement, inheriting enablement or non-interference, each
