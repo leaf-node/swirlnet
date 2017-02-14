@@ -3,8 +3,8 @@
 This library evolves neural networks that may perform well at various tasks,
 including control tasks.
 
-For a full example, see the `./test/xor.js` or the `./test/xor-new.js` and
-`./test/xor-worker.js`  programs.
+For a full example, see the `./test/xor-demo.js` or the `./test/xor-async.js`
+and `./test/xor-async-worker.js`  programs.
 
 **NOTE:** Instead of directly interfacing with swirlnet, you may wish to use
 the **`swirlnet-solver-async`** package. It helps you take advantange of parallel
@@ -25,9 +25,9 @@ Import the library into your javascript program
         swirlnet = require('swirlnet');
 
 User-defined settings are optional. Default settings and their values may be
-found in the `./src/defaults.js` file. Default settings and values may change
-in future versions of swirlnet. Refer to the release notes for a listing of
-prior changes.
+found in the `./src/defaults.js` file of the `swirlnet.make-population`
+package. Default settings and values may change in future versions of swirlnet.
+Refer to the release notes for a listing of prior changes.
 
         genomeSettings = {
 
@@ -45,7 +45,7 @@ Get a list of all the genomes from the current (first) generation
 
         genomes = population.getGenomes();
 
-Loop through and process each of the genomes. Create a phenotype for each
+Loop through and process each of the genomes: create a phenotype for each
 genome and use that to create each net. This process is broken up into more
 than one step and uses text based formats so that you can evolve genomes on one
 machine and test them in parallel on many others.
@@ -78,7 +78,7 @@ Get the network outputs
 Calculate your network's fitness. In practice you'll want to sample multiple
 outputs from a variety of inputs and combine them together using a fitness
 formula. Some people wait for network output to stabilize before sampling
-results but be aware that some recurrent networks do not stabilize.
+results, but be aware that some recurrent networks do not stabilize.
 
         fitness = results0[0] * results1[0];
 
@@ -178,7 +178,8 @@ Returns the number of nodes in a network:
 
 To override any of these settings, refer to the method at the top of this page.
 
-Default settings and their values may be found in the `./src/defaults.js` file.
-Default settings and values may change in future versions of swirlnet. Refer to
-the release notes for a listing of prior changes.
+Default settings and their values may be found in the `src/defaults.js` file of
+the `swirlnet.make-population` package.  Default settings and values may change
+in future versions of swirlnet. Refer to the release notes for a listing of
+prior changes.
 
