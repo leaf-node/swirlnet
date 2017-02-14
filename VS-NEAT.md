@@ -38,8 +38,9 @@ swirlnet gives you flexible options through seven probability settings.
       probabilities are the most effective options I've tried since they reduce
 attraction to the the local minimum of creating genomes with every connection
 gene disabled.
-Connections get disabled when a weak genome with an added (and reconnected)
-node and disabled (short) connection reproduces with a fitter genome.
+Without this behavior, connections often get disabled when a weak genome with
+an added (and reconnected) node and disabled (short) connection reproduces with
+a fitter genome.
 The additional connected node is not inherited from the weaker genome since it
 is either disjoint or excess; if the disabled connection is randomly inherited
 from the weaker genome then the result is a new genome with a missing
