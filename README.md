@@ -22,10 +22,6 @@ See the `test/xor-demo.js` or `test/xor-async.js` and
     $ npm install swirlnet-solver-async
     $ node ./test/xor-async.js
 
-## Status
-
-The API of this library is currently unstable.
-
 ## License
 
 This software is licensed under the Apache License, Version 2.0.

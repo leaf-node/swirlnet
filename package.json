@@ -1,7 +1,9 @@
 {
   "name": "swirlnet",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Neuroevolution library based on NEAT (NeuroEvolution of Augmenting Topologies)",
+  "url": "https://gitlab.com/sudoman/swirlnet/issues",
+  "repository": "gitlab:sudoman/swirlnet",
   "main": "src/index.js",
   "files": [
       "src",
@@ -15,10 +17,10 @@
     "test": "test/xor.js"
   },
   "dependencies": {
-      "swirlnet.makepopulation": "0.0.0",
-      "swirlnet.genotopheno": "0.0.0",
-      "swirlnet.makenet": "0.0.0",
-      "swirlnet.makearchive": "0.0.0"
+      "swirlnet.makepopulation": "1.0.x",
+      "swirlnet.genotopheno": "1.0.x",
+      "swirlnet.makenet": "1.0.x",
+      "swirlnet.makearchive": "1.0.x"
   },
   "keywords": [
     "NEAT",
