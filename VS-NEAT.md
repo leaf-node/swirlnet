@@ -12,7 +12,7 @@ disablement of a connection gene if it is disabled in either parent, regardless
 of the relative fitness of the parent carrying the disabled gene.
 
 This leads to a choice between, at one extreme, allowing rather frequent
-inheritence of disablement from weak parents, or rarely inheriting disablement
+inheritance of disablement from weak parents, or rarely inheriting disablement
 from fit parents, at the other. Since relative fitness determines which parent
 passes on excess and disjoint genes, neither option is appealing as both
 options frequently disrupt effective structure. Attempting to compromise with
@@ -24,10 +24,10 @@ covering multiple scenarios.
 swirlnet gives you flexible options through seven probability settings.
 
 * Firstly, you have the option of of using these settings to disable the
-  special inheritence rules for gene disablement.
+  special inheritance rules for gene disablement.
 
     * This causes disablement and enablement to be inherited along with
-      connection weight according to the gene inheritence rules.
+      connection weight according to the gene inheritance rules.
 
 * You can set gene disablement status to always be inherited from the gene of
   the fitter parent, along with other structural differences.
@@ -42,13 +42,13 @@ not inherited from the weaker genome since it is either disjoint or excess; if
 the disabled connection is randomly inherited from the weaker genome then the
 result is a new genome with a missing connection. Once all connections are
 deleted, genomes always create the same output that is situated half way
-between the correct and inccorect answer for every test case. In early stages
+between the correct and incorrect answer for every test case. In early stages
 of evolution, this disconnected genome may outperform connected genomes. Using
 the above approach solves this particular issue.
 
 * By changing four settings in swirlnet you may differentiate the probabilities
   of inheriting disablement, inheriting enablement or non-interference, each
-acccording to whether the fitter or weaker parent has the disabled gene.
+according to whether the fitter or weaker parent has the disabled gene.
 
 * You may set the gene enablement rate for cases in which both parents' genes
   are disabled.
@@ -72,17 +72,17 @@ excess genes from both.
 
 Removing this feature decreased code complexity and increased the rate at which
 solutions to a prior (albeit naive) version of the XOR problem were found. This
-feature may be readded later if found to be useful.
+feature may be re-added later if found to be useful.
 
 ## Weight mutation control
 
 swirlnet offers expanded options for controlling weight mutation compared to
 suggestions in the original NEAT paper. One has the option of setting the
-uniform gene perturbance, unique gene perturbance and unique gene weight reset
+uniform gene perturbation, unique gene perturbation and unique gene weight reset
 rates. The sum of these rates may be less than 1 in order to allow some
-weights in a genome undergoing weight mutation to remain unmutated.
+weights in a genome undergoing weight mutation to remain un-mutated.
 
-swirlnet uses gaussian distributions to set new weights and perturb existing
+swirlnet uses Gaussian distributions to set new weights and perturb existing
 ones.
 
 ## Other differences
