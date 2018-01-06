@@ -12,6 +12,10 @@ differences, refer to the `VS-NEAT.md` file in this repository.
 
 ## Documentation
 
+Most swirlnet code is not in this particular repository. To see the other code,
+either perform the above installation instructions, or browse [my other
+projects](https://gitlab.com/users/sudoman/projects).
+
 See the `API.md` file in this repo for API documentation.
 
 See the `test/xor-demo.js` or `test/xor-async.js` and
