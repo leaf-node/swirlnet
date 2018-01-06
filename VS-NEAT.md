@@ -81,7 +81,7 @@ swirlnet offers expanded options for controlling weight mutation compared to
 suggestions in the original NEAT paper. One has the option of setting the
 uniform gene perturbation, unique gene perturbation and unique gene weight
 reset rates. The sum of these rates may be less than 1 in order to allow some
-weights in a genome undergoing weight mutation to remain un-mutated.
+weights in a genome undergoing weight mutation to remain unmutated.
 
 swirlnet uses Gaussian distributions to set new weights and perturb existing
 ones.
