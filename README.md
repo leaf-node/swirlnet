@@ -10,6 +10,12 @@ differences, refer to the `VS-NEAT.md` file in this repository.
 
     $ npm install swirlnet
 
+If you're just installing to try the demos, you'll need to:
+
+    $ cd node_modules/swirlnet
+
+... then follow the instructions below.
+
 ## Documentation
 
 Most swirlnet code is not in this particular repository. To see the other code,
