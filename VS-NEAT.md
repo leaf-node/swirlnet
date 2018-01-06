@@ -15,8 +15,8 @@ This leads to a choice between, at one extreme, allowing rather frequent
 inheritance of disablement from weak parents, or rarely inheriting disablement
 from fit parents, at the other. Since relative fitness determines which parent
 passes on excess and disjoint genes, neither option is appealing as both
-options frequently disrupt effective structure. Attempting to compromise with
-a fifty percent chance of inheriting disablement from either parent leads to
+options frequently disrupt effective structure. Attempting to compromise with a
+fifty percent chance of inheriting disablement from either parent leads to
 frequently disrupted structure in both of these problematic scenarios. This is
 caused by an effective double bind due to there being only one probability
 covering multiple scenarios.
@@ -34,28 +34,29 @@ swirlnet gives you flexible options through seven probability settings.
 
     * In the case of the XOR challenge, this setting and settings with similar
       probabilities are the most effective options I've tried since they reduce
-attraction to the the local minimum of creating genomes with every connection
-gene disabled. Without this type of inheritance, connections often become disabled when a
-weak genome with an added (and reconnected) node and disabled (short)
-connection reproduces with a fitter genome. The additional connected node is
-not inherited from the weaker genome since it is either disjoint or excess; if
-the disabled connection is randomly inherited from the weaker genome then the
-result is a new genome with a missing connection. Once all connections are
-deleted, genomes always create the same output that is situated half way
-between the correct and incorrect answer for every XOR test case. In early stages
-of evolution, this disconnected genome may outperform connected genomes. Using
-the above approach solves this particular issue.
+      attraction to the the local minimum of creating genomes with every
+      connection gene disabled. Without this type of inheritance, connections
+      often become disabled when a weak genome with an added (and reconnected)
+      node and disabled (short) connection reproduces with a fitter genome. The
+      additional connected node is not inherited from the weaker genome since
+      it is either disjoint or excess; if the disabled connection is randomly
+      inherited from the weaker genome then the result is a new genome with a
+      missing connection. Once all connections are deleted, genomes always
+      create the same output that is situated half way between the correct and
+      incorrect answer for every XOR test case. In early stages of evolution,
+      this disconnected genome may outperform connected genomes. Using the
+      above approach solves this particular issue.
 
 * By changing four settings in swirlnet you may differentiate the probabilities
   of inheriting disablement, inheriting enablement or non-interference, each
-according to whether the fitter or weaker parent has the disabled gene.
+  according to whether the fitter or weaker parent has the disabled gene.
 
 * You may set the gene enablement rate for cases in which both parents' genes
   are disabled.
 
 * You can also set the frequency of asexual gene disablement toggling with two
   settings, one for the rate of enablement, the other for the rate of
-disablement.
+  disablement.
 
 * Tweaking these settings allows you to follow the same, or a similar, approach
   as the one outlined in the original NEAT paper.
@@ -78,8 +79,8 @@ prior behavior may be re-added later if found to be useful.
 
 swirlnet offers expanded options for controlling weight mutation compared to
 suggestions in the original NEAT paper. One has the option of setting the
-uniform gene perturbation, unique gene perturbation and unique gene weight reset
-rates. The sum of these rates may be less than 1 in order to allow some
+uniform gene perturbation, unique gene perturbation and unique gene weight
+reset rates. The sum of these rates may be less than 1 in order to allow some
 weights in a genome undergoing weight mutation to remain un-mutated.
 
 swirlnet uses Gaussian distributions to set new weights and perturb existing
