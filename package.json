@@ -1,6 +1,6 @@
 {
   "name": "swirlnet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Neuroevolution library based on NEAT (NeuroEvolution of Augmenting Topologies)",
   "url": "https://gitlab.com/sudoman/swirlnet/issues",
   "repository": "gitlab:sudoman/swirlnet",

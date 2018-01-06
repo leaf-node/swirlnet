@@ -2,6 +2,14 @@
 
 ## 1.0
 
+### 1.0.2
+
+Documentation tweaks
+
+### 1.0.1
+
+Corrected package names
+
 ### 1.0.0
 
 It's finally here! :D
