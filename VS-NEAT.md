@@ -35,14 +35,14 @@ swirlnet gives you flexible options through seven probability settings.
     * In the case of the XOR challenge, this setting and settings with similar
       probabilities are the most effective options I've tried since they reduce
 attraction to the the local minimum of creating genomes with every connection
-gene disabled. Without this behavior, connections often get disabled when a
+gene disabled. Without this type of inheritance, connections often become disabled when a
 weak genome with an added (and reconnected) node and disabled (short)
 connection reproduces with a fitter genome. The additional connected node is
 not inherited from the weaker genome since it is either disjoint or excess; if
 the disabled connection is randomly inherited from the weaker genome then the
 result is a new genome with a missing connection. Once all connections are
 deleted, genomes always create the same output that is situated half way
-between the correct and incorrect answer for every test case. In early stages
+between the correct and incorrect answer for every XOR test case. In early stages
 of evolution, this disconnected genome may outperform connected genomes. Using
 the above approach solves this particular issue.
 
@@ -71,8 +71,8 @@ inherited from the 'fitter' parent instead of randomly inheriting disjoint and
 excess genes from both.
 
 Removing this feature decreased code complexity and increased the rate at which
-solutions to a prior (albeit naive) version of the XOR problem were found. This
-feature may be re-added later if found to be useful.
+solutions to a prior (albeit naive) version of the XOR problem were found. The
+prior behavior may be re-added later if found to be useful.
 
 ## Weight mutation control
 
