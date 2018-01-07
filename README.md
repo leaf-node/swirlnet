@@ -32,6 +32,9 @@ See the `test/xor-demo.js` or `test/xor-async.js` and
     $ npm install swirlnet-solver-async
     $ node ./test/xor-async.js
 
+You may also be interested in my [double inverted pendulum
+demos](https://gitlab.com/sudoman/swirlnet-demos).
+
 ## License
 
 This software is licensed under the Apache License, Version 2.0.
