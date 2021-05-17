@@ -18,9 +18,9 @@ If you want to try the demos, you'll need to:
 
 ## Documentation
 
-Most swirlnet code is not in this particular repository. To see the other code,
-either perform the above installation instructions, or browse [my other
-projects](https://gitlab.com/users/sudoman/projects).
+Most swirlnet code is not in this particular repository. To see the related
+code, either perform the above installation instructions, or browse the other
+[swirlnet repos](https://github.com/leaf-node?tab=repositories&q=swirlnet).
 
 See the `API.md` file in this repo for API documentation.
 
@@ -33,7 +33,7 @@ See the `test/xor-demo.js` or `test/xor-async.js` and
     $ node ./test/xor-async.js
 
 You may also be interested in my [double inverted pendulum
-demos](https://gitlab.com/sudoman/swirlnet-demos).
+demos](https://github.com/leaf-node/swirlnet-demos).
 
 ## License
 
