@@ -1,6 +1,6 @@
 {
   "name": "swirlnet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Neuroevolution library based on NEAT (NeuroEvolution of Augmenting Topologies)",
   "url": "https://github.com/leaf-node/swirlnet/issues",
   "repository": "github:leaf-node/swirlnet",
